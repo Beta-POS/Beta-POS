@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="tblCheques" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtNetValue" alignment="0" pref="292" max="32767" attributes="0"/>
+                          <Component id="txtCashAmount" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtCreditAmount" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtChequeAmount" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNetValue" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCashAmount" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtChequeAmount" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="tblCheques" pref="58" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="cLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCreditAmount" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="com.mac.af.component.base.label.CLabel" name="cLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Payable Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.base.label.CLabel" name="cLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cash Amount :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.base.label.CLabel" name="cLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Credit Amount :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtNetValue">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtCashAmount">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtCreditAmount">
+    </Component>
+    <Component class="com.mac.af.component.base.label.CLabel" name="cLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cheque Amount :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtChequeAmount">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.table.CIAddingTable" name="tblCheques">
+    </Component>
+  </SubComponents>
+</Form>

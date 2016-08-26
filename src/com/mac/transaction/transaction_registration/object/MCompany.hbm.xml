@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On May 15, 2015 12:29:03 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.transaction_registration.object.MCompany" table="m_company" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.transaction_registration.object" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="versionId" type="string">
+            <column name="version_id" length="25" />
+        </property>
+        <set name="MBranchs" inverse="true" cascade="all">
+            <key>
+                <column name="company" length="10" />
+            </key>
+            <one-to-many class="com.mac.transaction.transaction_registration.object.MBranch" />
+        </set>
+    </class>
+</hibernate-mapping>

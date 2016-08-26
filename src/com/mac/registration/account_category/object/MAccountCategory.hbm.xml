@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2015 11:33:40 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.account_category.object.MAccountCategory" table="m_account_category" catalog="sphere">
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MAccountCategory" class="com.mac.registration.account_category.object.MAccountCategory" fetch="select">
+            <column name="parent" length="10" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="12" />
+        </property>
+        <property name="path" type="string">
+            <column name="path" length="100" />
+        </property>
+        <set name="MAccountCategories" inverse="true">
+            <key>
+                <column name="parent" length="10" />
+            </key>
+            <one-to-many class="com.mac.registration.account_category.object.MAccountCategory" />
+        </set>
+    </class>
+</hibernate-mapping>

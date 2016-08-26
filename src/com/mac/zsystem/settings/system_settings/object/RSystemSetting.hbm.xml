@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 11, 2015 11:09:04 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.settings.system_settings.object.RSystemSetting" table="r_system_setting" lazy="false">
+        <cache usage="nonstrict-read-write" region="com.mac.zsystem.settings.system_settings.object" />
+        <id name="setting" type="string">
+            <column name="setting" length="25" />
+            <generator class="assigned" />
+        </id>
+        <property name="description" type="string">
+            <column name="description" length="50" not-null="true" />
+        </property>
+        <property name="value" type="string">
+            <column name="value" length="25" not-null="true" />
+        </property>
+        <property name="defaultValue" type="string">
+            <column name="default_value" length="25" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

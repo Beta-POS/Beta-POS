@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="helaroo_sphere_nipun"/>
+  <table-filter match-name="m_store"/>
+  <table-filter match-name="r_transaction_type"/>
+  <table-filter match-name="m_company"/>
+  <table-filter match-name="m_branch"/>
+  <table-filter match-name="m_report"/>
+</hibernate-reverse-engineering>

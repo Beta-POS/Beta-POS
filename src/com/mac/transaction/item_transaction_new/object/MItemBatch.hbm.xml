@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.MItemBatch" table="m_item_batch" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="32" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MItem" class="com.mac.transaction.item_transaction_new.object.MItem" fetch="select">
+            <column name="item" length="21" not-null="true" />
+        </many-to-one>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="batchNumber" type="int">
+            <column name="batch_number" not-null="true" />
+        </property>
+        <property name="salePrice" type="double">
+            <column name="sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="lastSalesPrice" type="double">
+            <column name="last_sales_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wholeSalePrice" type="double">
+            <column name="whole_sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="costPrice" type="double">
+            <column name="cost_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="expireDate" type="date">
+            <column name="expire_date" length="10" not-null="true" />
+        </property>
+        <set name="TTransactionDetails" inverse="true" cascade="all">
+            <key>
+                <column name="batch" length="32" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactionDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

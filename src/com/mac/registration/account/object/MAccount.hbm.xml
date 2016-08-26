@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 3, 2015 12:03:57 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.account.object.MAccount" table="m_account" catalog="sphere">
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MAccountCategory" class="com.mac.registration.account.object.MAccountCategory" fetch="select">
+            <column name="category" length="10" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="accountGroup" type="string">
+            <column name="account_group" length="25" />
+        </property>
+        <property name="printOrder" type="java.lang.Integer">
+            <column name="print_order" />
+        </property>
+        <property name="beforeWord" type="string">
+            <column name="before_word" length="25" />
+        </property>
+        <property name="afterWord" type="string">
+            <column name="after_word" length="25" />
+        </property>
+        <property name="active" type="java.lang.Boolean">
+            <column name="active" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 4, 2015 3:59:47 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.reports.report_parameter.transaction_type_object.RTransactionType" table="r_transaction_type" lazy="false">
+        <cache usage="read-write" region="com.mac.reports.report_parameter.transaction_type_object" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="formType" type="string">
+            <column name="form_type" length="25" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="25" not-null="true" />
+        </property>
+        <property name="itemIn" type="boolean">
+            <column name="item_in" not-null="true" />
+        </property>
+        <property name="itemOut" type="boolean">
+            <column name="item_out" not-null="true" />
+        </property>
+        <property name="inStore" type="string">
+            <column name="in_store" length="21" />
+        </property>
+        <property name="outStore" type="string">
+            <column name="out_store" length="21" />
+        </property>
+        <property name="fixedPrice" type="boolean">
+            <column name="fixed_price" not-null="true" />
+        </property>
+        <property name="priceType" type="string">
+            <column name="price_type" length="25" not-null="true" />
+        </property>
+        <property name="percentageDiscount" type="boolean">
+            <column name="percentage_discount" not-null="true" />
+        </property>
+        <property name="expireDate" type="boolean">
+            <column name="expire_date" not-null="true" />
+        </property>
+        <property name="client" type="boolean">
+            <column name="client" not-null="true" />
+        </property>
+        <property name="supplier" type="boolean">
+            <column name="supplier" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

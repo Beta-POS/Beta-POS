@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 27, 2015 12:48:51 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.item.object.MItemSettings" table="m_item_settings" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.item.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="32" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MItem" class="com.mac.registration.item.object.MItem" fetch="select">
+            <column name="item" length="21" not-null="true" />
+        </many-to-one>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="store" type="string">
+            <column name="store" length="21" />
+        </property>
+        <property name="reorderLevel" type="int">
+            <column name="reorder_level" not-null="true" />
+        </property>
+        <property name="reorderQuantity" type="int">
+            <column name="reorder_quantity" not-null="true" />
+        </property>
+        <property name="shelf" type="string">
+            <column name="shelf" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

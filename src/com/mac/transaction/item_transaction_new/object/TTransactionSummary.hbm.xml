@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.TTransactionSummary" table="t_transaction_summary" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="MEmployee" class="com.mac.transaction.item_transaction_new.object.MEmployee" fetch="select">
+            <column name="employee" length="21" />
+        </many-to-one>
+        <many-to-one name="MTransactor" class="com.mac.transaction.item_transaction_new.object.MTransactor" fetch="select">
+            <column name="transactor" length="21" />
+        </many-to-one>
+        <many-to-one name="MStoreByOutStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="out_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MStoreByInStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="in_store" length="21" />
+        </many-to-one>
+        <many-to-one name="RTransactionType" class="com.mac.transaction.item_transaction_new.object.RTransactionType" fetch="select">
+            <column name="transaction_type" length="10" not-null="true" />
+        </many-to-one>
+        <property name="transactionNo" type="int">
+            <column name="transaction_no" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="transactionDate" type="date">
+            <column name="transaction_date" length="10" not-null="true" />
+        </property>
+        <property name="referenceNo" type="java.lang.Integer">
+            <column name="reference_no" />
+        </property>
+        <property name="totalValue" type="double">
+            <column name="total_value" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="itemDiscount" type="double">
+            <column name="item_discount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="specialDiscount" type="double">
+            <column name="special_discount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="netTotal" type="double">
+            <column name="net_total" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="balanceAmount" type="double">
+            <column name="balance_amount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="cashAmount" type="double">
+            <column name="cash_amount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="chequeAmount" type="double">
+            <column name="cheque_amount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="creditAmount" type="double">
+            <column name="credit_amount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="session" type="java.lang.Integer">
+            <column name="session" />
+        </property>
+        <property name="documentNo" type="string">
+            <column name="document_no" length="25" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="25" />
+        </property>
+        <property name="route" type="string">
+            <column name="route" length="21" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" not-null="true" />
+        </property>
+        <set name="TItemMovements" inverse="true" cascade="all-delete-orphan">
+            <key>
+                <column name="transaction_summary" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TItemMovement" />
+        </set>
+        <set name="TTransactionDetails" inverse="true" cascade="all-delete-orphan">
+            <key>
+                <column name="transaction_summary" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactionDetail" />
+        </set>
+        <set name="TTransactorTransactions" inverse="true" cascade="all-delete-orphan">
+            <key>
+                <column name="transaction_summary" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactorTransaction" />
+        </set>
+    </class>
+</hibernate-mapping>

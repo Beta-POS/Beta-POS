@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.TTransactionDetail" table="t_transaction_detail" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="MItemBatch" class="com.mac.transaction.item_transaction_new.object.MItemBatch" fetch="select">
+            <column name="batch" length="32" />
+        </many-to-one>
+        <many-to-one name="MStoreByOutStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="out_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MStoreByInStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="in_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MItem" class="com.mac.transaction.item_transaction_new.object.MItem" fetch="select">
+            <column name="item" length="21" />
+        </many-to-one>
+        <many-to-one name="TTransactionSummary" class="com.mac.transaction.item_transaction_new.object.TTransactionSummary" fetch="select">
+            <column name="transaction_summary" />
+        </many-to-one>
+        <property name="price" type="java.lang.Double">
+            <column name="price" precision="22" scale="0" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="quantity" />
+        </property>
+        <property name="discount" type="java.lang.Double">
+            <column name="discount" precision="22" scale="0" />
+        </property>
+        <property name="expireDate" type="date">
+            <column name="expire_date" length="10" />
+        </property>
+        <property name="netValue" type="java.lang.Double">
+            <column name="net_value" precision="22" scale="0" />
+        </property>
+        <property name="avaragePrice" type="java.lang.Double">
+            <column name="avarage_price" precision="22" scale="0" />
+        </property>
+        <set name="TSerialMovements" inverse="true" cascade="all">
+            <key>
+                <column name="transaction_detail" not-null="true" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TSerialMovement" />
+        </set>
+    </class>
+</hibernate-mapping>

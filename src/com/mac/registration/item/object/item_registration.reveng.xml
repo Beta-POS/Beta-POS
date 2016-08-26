@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+    <schema-selection match-catalog="sphere"/>
+    <!--<table-filter match-name="m_item_model"/>-->
+    <!--<table-filter match-name="m_item_brand"/>-->
+    <table-filter match-name="m_item"/>
+    <!--<table-filter match-name="m_item_generic"/>-->
+    <!--<table-filter match-name="m_item_size"/>-->
+    <!--<table-filter match-name="m_item_make"/>-->
+    <table-filter match-name="m_sub_category"/>
+    <!--<table-filter match-name="m_item_unit"/>-->
+    <table-filter match-name="m_department"/>
+    <table-filter match-name="m_main_category"/>
+    <table-filter match-name="m_item_settings"/>
+    <table-filter match-name="m_item_property"/>
+    <table-filter match-name="m_item_batch"/>
+</hibernate-reverse-engineering>

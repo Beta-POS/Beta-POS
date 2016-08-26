@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On May 15, 2015 12:58:15 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.account_transaction.object.TTransactionSettlement" table="t_transaction_settlement" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.account_transaction.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TTransactionSummaryBySettleTransactionSummary" class="com.mac.transaction.account_transaction.object.TTransactionSummary" fetch="select">
+            <column name="settle_transaction_summary" not-null="true" />
+        </many-to-one>
+        <many-to-one name="TTransactionSummaryByTransactionSummary" class="com.mac.transaction.account_transaction.object.TTransactionSummary" fetch="select">
+            <column name="transaction_summary" not-null="true" />
+        </many-to-one>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="amount" type="double">
+            <column name="amount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" />
+        </property>
+    </class>
+</hibernate-mapping>

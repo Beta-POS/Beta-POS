@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Oct 15, 2014 2:34:02 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.transaction.transaction.object.Transaction" table="transaction" lazy="false">
+        <cache usage="read-write" region="com.mac.zsystem.transaction.transaction.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="transactionType" class="com.mac.zsystem.transaction.transaction.object.TransactionType" fetch="select">
+            <column name="transaction_type" length="25" not-null="true" />
+        </many-to-one>
+        <property name="transactionDate" type="date">
+            <column name="transaction_date" length="10" not-null="true" />
+        </property>
+        <property name="referenceNo" type="string">
+            <column name="reference_no" length="25" not-null="true" />
+        </property>
+        <property name="documentNo" type="string">
+            <column name="document_no" length="25" />
+        </property>
+        <property name="loan" type="java.lang.Integer">
+            <column name="loan" />
+        </property>
+        <property name="cashierSession" type="java.lang.Integer">
+            <column name="cashier_session" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="client" type="string">
+            <column name="client" length="10" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" length="100" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" not-null="true" />
+        </property>
+        <set name="transactionHistories" inverse="true" cascade="all">
+            <key>
+                <column name="transaction" not-null="true" />
+            </key>
+            <one-to-many class="com.mac.zsystem.transaction.transaction.object.TransactionHistory" />
+        </set>
+    </class>
+</hibernate-mapping>

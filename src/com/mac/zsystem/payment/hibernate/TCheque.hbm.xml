@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Jun 9, 2015 11:33:12 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.payment.hibernate.TCheque" table="t_cheque" lazy="false">
+        <cache usage="read-write" region="com.mac.zsystem.payment.hibernate" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="MBankBranch" class="com.mac.zsystem.payment.hibernate.MBankBranch" fetch="select">
+            <column name="bank_branch" length="10" not-null="true" />
+        </many-to-one>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="client" type="string">
+            <column name="client" length="21" not-null="true" />
+        </property>
+        <property name="transactionSummary" type="int">
+            <column name="transaction_summary" not-null="true" />
+        </property>
+        <property name="accountNo" type="string">
+            <column name="account_no" length="25" not-null="true" />
+        </property>
+        <property name="chequeNo" type="string">
+            <column name="cheque_no" length="25" not-null="true" />
+        </property>
+        <property name="amount" type="double">
+            <column name="amount" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="chequeDate" type="date">
+            <column name="cheque_date" length="10" />
+        </property>
+        <property name="depositDate" type="string">
+            <column name="deposit_date" length="45" />
+        </property>
+        <property name="realizeDate" type="date">
+            <column name="realize_date" length="10" />
+        </property>
+        <property name="returnDate" type="date">
+            <column name="return_date" length="10" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.TItemMovement" table="t_item_movement" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="MStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="store" length="21" />
+        </many-to-one>
+        <many-to-one name="MItem" class="com.mac.transaction.item_transaction_new.object.MItem" fetch="select">
+            <column name="item" length="21" />
+        </many-to-one>
+        <many-to-one name="TTransactionSummary" class="com.mac.transaction.item_transaction_new.object.TTransactionSummary" fetch="select">
+            <column name="transaction_summary" />
+        </many-to-one>
+        <property name="branch" type="string">
+            <column name="branch" length="10" />
+        </property>
+        <property name="inQuantity" type="java.lang.Integer">
+            <column name="in_quantity" />
+        </property>
+        <property name="outQuantity" type="java.lang.Integer">
+            <column name="out_quantity" />
+        </property>
+        <property name="avaragePrice" type="java.lang.Double">
+            <column name="avarage_price" precision="22" scale="0" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" />
+        </property>
+    </class>
+</hibernate-mapping>

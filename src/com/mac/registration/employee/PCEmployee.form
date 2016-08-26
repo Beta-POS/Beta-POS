@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[400, 403]"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="cDLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="cboSalutation" max="32767" attributes="0"/>
+                  <Component id="txtUserName" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtNote" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtFullName" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtPassword" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtFax" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtEmail" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="txtName" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="txtCode" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtNicNo" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lblImage" pref="81" max="32767" attributes="0"/>
+                          <Component id="btnBrowse" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="txtTelephone1" pref="149" max="32767" attributes="0"/>
+                          <Component id="chkActive" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMobile" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="txtTelephone2" min="-2" pref="150" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="cboUserRole" max="32767" attributes="0"/>
+                  <Component id="txtAddressLine1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtAddressLine2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtAddressLine3" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCode" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtName" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="lblImage" min="-2" pref="40" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnBrowse" alignment="3" min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="cDLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="txtNicNo" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="cDLabel4" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboSalutation" alignment="2" min="-2" pref="22" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="cDLabel8" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboUserRole" alignment="2" min="-2" pref="22" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtFullName" alignment="3" pref="20" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAddressLine1" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtAddressLine2" min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtAddressLine3" min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMobile" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTelephone1" alignment="3" pref="20" max="32767" attributes="0"/>
+                  <Component id="txtTelephone2" alignment="3" pref="20" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtFax" alignment="3" pref="20" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEmail" alignment="3" pref="20" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNote" alignment="3" pref="20" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtUserName" alignment="3" pref="20" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPassword" alignment="3" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="chkActive" min="-2" pref="25" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nic No:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Salutation:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Name:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Full Name:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Address Line:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mobile:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Telephone:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fax:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Note:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="User Name:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Password:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.command.button.CCButton" name="btnBrowse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Browse"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblImage">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtCode">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtName">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtNicNo">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNicNoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSalutation">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(Salutation.ALL)"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtFullName">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtFullNameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtAddressLine1">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtAddressLine2">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtAddressLine3">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtMobile">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtTelephone1">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtTelephone2">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtFax">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtEmail">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtNote">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtUserName">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.passwordfield.CIPasswordField" name="txtPassword">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkActive">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Active"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="User Role :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboUserRole">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return getUserRoles();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

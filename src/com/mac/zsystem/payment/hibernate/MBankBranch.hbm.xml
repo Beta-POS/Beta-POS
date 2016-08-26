@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Jun 9, 2015 11:33:12 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.payment.hibernate.MBankBranch" table="m_bank_branch" lazy="false">
+        <cache usage="read-write" region="com.mac.zsystem.payment.hibernate" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="bank" type="string">
+            <column name="bank" length="10" />
+        </property>
+        <set name="TCheques" inverse="true" cascade="all">
+            <key>
+                <column name="bank_branch" length="10" not-null="true" />
+            </key>
+            <one-to-many class="com.mac.zsystem.payment.hibernate.TCheque" />
+        </set>
+    </class>
+</hibernate-mapping>

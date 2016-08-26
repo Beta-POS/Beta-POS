@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On May 15, 2015 12:29:03 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.transaction_registration.object.RTransactionType" table="r_transaction_type" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.transaction_registration.object" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MReportByThirdReport" class="com.mac.transaction.transaction_registration.object.MReport" fetch="select">
+            <column name="third_report" length="10" />
+        </many-to-one>
+        <many-to-one name="MStoreByOutStore" class="com.mac.transaction.transaction_registration.object.MStore" fetch="select">
+            <column name="out_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MStoreByInStore" class="com.mac.transaction.transaction_registration.object.MStore" fetch="select">
+            <column name="in_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MReportByFirstReport" class="com.mac.transaction.transaction_registration.object.MReport" fetch="select">
+            <column name="first_report" length="10" />
+        </many-to-one>
+        <many-to-one name="MReportBySecondReport" class="com.mac.transaction.transaction_registration.object.MReport" fetch="select">
+            <column name="second_report" length="10" />
+        </many-to-one>
+        <many-to-one name="RTransactionType" class="com.mac.transaction.transaction_registration.object.RTransactionType" fetch="select">
+            <column name="settlement_transaction_type" length="10" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="formType" type="string">
+            <column name="form_type" length="25" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="25" not-null="true" />
+        </property>
+        <property name="itemIn" type="boolean">
+            <column name="item_in" not-null="true" />
+        </property>
+        <property name="itemOut" type="boolean">
+            <column name="item_out" not-null="true" />
+        </property>
+        <property name="fixedPrice" type="boolean">
+            <column name="fixed_price" not-null="true" />
+        </property>
+        <property name="priceType" type="string">
+            <column name="price_type" length="25" not-null="true" />
+        </property>
+        <property name="percentageDiscount" type="boolean">
+            <column name="percentage_discount" not-null="true" />
+        </property>
+        <property name="settlementTransaction" type="boolean">
+            <column name="settlement_transaction" not-null="true" />
+        </property>
+        <property name="expireDate" type="boolean">
+            <column name="expire_date" not-null="true" />
+        </property>
+        <property name="client" type="boolean">
+            <column name="client" not-null="true" />
+        </property>
+        <property name="supplier" type="boolean">
+            <column name="supplier" not-null="true" />
+        </property>
+        <property name="printFirstReport" type="boolean">
+            <column name="print_first_report" not-null="true" />
+        </property>
+        <property name="printSecondReport" type="boolean">
+            <column name="print_second_report" not-null="true" />
+        </property>
+        <property name="printThirdReport" type="boolean">
+            <column name="print_third_report" not-null="true" />
+        </property>
+        <property name="creditAmount" type="boolean">
+            <column name="credit_amount" not-null="true" />
+        </property>
+        <property name="debitAmount" type="boolean">
+            <column name="debit_amount" not-null="true" />
+        </property>
+        <property name="payment" type="boolean">
+            <column name="payment" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+        <set name="RTransactionTypes" inverse="true" cascade="all">
+            <key>
+                <column name="settlement_transaction_type" length="10" />
+            </key>
+            <one-to-many class="com.mac.transaction.transaction_registration.object.RTransactionType" />
+        </set>
+    </class>
+</hibernate-mapping>

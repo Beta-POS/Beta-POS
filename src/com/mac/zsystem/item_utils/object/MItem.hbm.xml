@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Jan 13, 2015 3:25:14 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.item_utils.object.MItem" table="m_item" lazy="false">
+        <cache usage="read-write" region="com.mac.zsystem.item_utils.object" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="barcode" type="string">
+            <column name="barcode" length="25" />
+        </property>
+        <property name="sinhalaName" type="string">
+            <column name="sinhala_name" length="100" />
+        </property>
+        <property name="tamilName" type="string">
+            <column name="tamil_name" length="100" />
+        </property>
+        <property name="brand" type="java.lang.Integer">
+            <column name="brand" />
+        </property>
+        <property name="make" type="java.lang.Integer">
+            <column name="make" />
+        </property>
+        <property name="model" type="java.lang.Integer">
+            <column name="model" />
+        </property>
+        <property name="size" type="java.lang.Integer">
+            <column name="size" />
+        </property>
+        <property name="unit" type="java.lang.Integer">
+            <column name="unit" />
+        </property>
+        <property name="generic" type="java.lang.Integer">
+            <column name="generic" />
+        </property>
+        <property name="department" type="string">
+            <column name="department" length="10" />
+        </property>
+        <property name="mainCategory" type="string">
+            <column name="main_category" length="10" />
+        </property>
+        <property name="subCategory" type="string">
+            <column name="sub_category" length="10" />
+        </property>
+        <property name="salePrice" type="double">
+            <column name="sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="lastSalePrice" type="double">
+            <column name="last_sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wholeSalePrice" type="double">
+            <column name="whole_sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="costPrice" type="double">
+            <column name="cost_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="averagePrice" type="double">
+            <column name="average_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="batch" type="boolean">
+            <column name="batch" not-null="true" />
+        </property>
+        <property name="serial" type="boolean">
+            <column name="serial" not-null="true" />
+        </property>
+        <property name="service" type="boolean">
+            <column name="service" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+        <set name="MItemBatchs" inverse="true" cascade="all">
+            <key>
+                <column name="item" length="10" not-null="true" />
+            </key>
+            <one-to-many class="com.mac.zsystem.item_utils.object.MItemBatch" />
+        </set>
+    </class>
+</hibernate-mapping>

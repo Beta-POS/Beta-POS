@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 5:08:50 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.branch.object.MCompany" table="m_company" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.branch.object" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="versionId" type="string">
+            <column name="version_id" length="25" />
+        </property>
+        <set name="MBranchs" inverse="true" cascade="all">
+            <key>
+                <column name="company" length="10" />
+            </key>
+            <one-to-many class="com.mac.registration.branch.object.MBranch" />
+        </set>
+    </class>
+</hibernate-mapping>

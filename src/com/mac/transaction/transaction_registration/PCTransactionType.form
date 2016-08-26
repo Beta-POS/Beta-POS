@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="com.mac.af.component.base.textfield.CDateField" name="cDateField1">
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPanel1" alignment="1" max="32767" attributes="0"/>
+                  <Component id="pnlItemTransaction" alignment="1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="pnlItemTransaction" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel1" min="-2" pref="91" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboFormType" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="cDLabel1" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboFormType" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="14" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Form Type :"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboFormType">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(getFormTypes())"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="pnlItemTransaction">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="chkSettlementTransaction" max="32767" attributes="0"/>
+                              <Component id="chkQuantityIn" min="-2" max="-2" attributes="0"/>
+                              <Component id="chkQuantityOut" max="32767" attributes="0"/>
+                              <Component id="cDLabel5" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cDLabel2" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                              <Component id="cDLabel3" alignment="0" min="-2" pref="79" max="-2" attributes="0"/>
+                              <Component id="cDLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="chkFirstReport" max="32767" attributes="0"/>
+                              <Component id="chkSecondReport" max="32767" attributes="0"/>
+                              <Component id="chkThirdReport" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtName" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboTransactiontype" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtCode" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboQuantityIn" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboQuantityOut" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboPriceType" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboFirstReport" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboSecondReport" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboThirdReport" alignment="0" max="32767" attributes="0"/>
+                              <Component id="cboSettlementTransaction" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="chkDebitAcc" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="95" pref="99" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="chkExpireDate" max="32767" attributes="0"/>
+                                              <Component id="chkClient" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="chkPercentDiscount" max="32767" attributes="0"/>
+                                              <Component id="chkSupplier" min="-2" pref="107" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="chkCreditAcc" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="chkPayment" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="chkActive" min="-2" max="-2" attributes="0"/>
+                              <Component id="chkValueDiscount" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="cDLabel5" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboTransactiontype" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="cDLabel2" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtCode" alignment="2" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="cDLabel3" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtName" alignment="2" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="chkQuantityIn" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboQuantityIn" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="chkQuantityOut" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboQuantityOut" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="chkFirstReport" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboFirstReport" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="chkSecondReport" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboSecondReport" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="chkThirdReport" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboThirdReport" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="2" attributes="0">
+                      <Component id="cDLabel4" alignment="2" min="-2" max="-2" attributes="0"/>
+                      <Component id="cboPriceType" alignment="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="cboSettlementTransaction" min="-2" max="-2" attributes="0"/>
+                      <Component id="chkSettlementTransaction" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="chkExpireDate" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="chkClient" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="23" pref="23" max="-2" attributes="0"/>
+                          <Component id="chkValueDiscount" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="chkActive" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="chkPercentDiscount" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="chkSupplier" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="chkCreditAcc" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="chkPayment" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="chkDebitAcc" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Code :"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtCode">
+        </Component>
+        <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Name :"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtName">
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkQuantityIn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Quantity In :"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkQuantityInActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboQuantityIn">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa; @Override&#xa;    public List getComboData(){&#xa;        return getStores();&#xa;    }&#xa;&#xa;}&#xa;"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkQuantityOut">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Quantity Out :"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboQuantityOut">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa; @Override&#xa;    public List getComboData(){&#xa;        return getStores();&#xa;    }&#xa;&#xa;}&#xa;"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Price Type :"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboPriceType">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(getPriceTypes())"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkExpireDate">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Expire Date"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkPercentDiscount">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Percent Discount"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkPercentDiscountActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkActive">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Active"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkSupplier">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Supplier"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkValueDiscount">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Value Discount"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Transaction Type:"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboTransactiontype">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(getTransactionTypes())"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkClient">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Client"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkFirstReport">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Report"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboFirstReport">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return getReports();&#xa;    }&#xa;&#xa;}&#xa;"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSecondReport">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return getReports();&#xa;    }&#xa;&#xa;}&#xa;"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkSecondReport">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Second Report"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboThirdReport">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return getReports();&#xa;    }&#xa;&#xa;}&#xa;"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkThirdReport">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Third Report"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkCreditAcc">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Credit Amount"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkDebitAcc">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Debit Amount"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSettlementTransaction">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return getSettlementTransactions();&#xa;    }&#xa;}"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkSettlementTransaction">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Settlement Transaction"/>
+          </Properties>
+        </Component>
+        <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkPayment">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Payment"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

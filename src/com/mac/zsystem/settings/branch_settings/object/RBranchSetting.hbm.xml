@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 18, 2015 12:04:30 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.settings.branch_settings.object.RBranchSetting" table="r_branch_setting" lazy="false">
+        <cache usage="read-write" region="com.mac.zsystem.settings.branch_settings.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="21" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MBranch" class="com.mac.zsystem.settings.branch_settings.object.MBranch" fetch="select">
+            <column name="branch" length="10" not-null="true" />
+        </many-to-one>
+        <property name="setting" type="string">
+            <column name="setting" length="25" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="50" not-null="true" />
+        </property>
+        <property name="value" type="string">
+            <column name="value" length="25" not-null="true" />
+        </property>
+        <property name="defaultValue" type="string">
+            <column name="default_value" length="25" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 11, 2015 11:41:05 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.main_category.object.MMainCategory" table="m_main_category" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.main_category.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="21" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MDepartment" class="com.mac.registration.main_category.object.MDepartment" fetch="select">
+            <column name="department" length="21" not-null="true" />
+        </many-to-one>
+        <property name="code" type="string">
+            <column name="code" length="10" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

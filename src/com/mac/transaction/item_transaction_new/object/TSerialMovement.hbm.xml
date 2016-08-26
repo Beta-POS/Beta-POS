@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.TSerialMovement" table="t_serial_movement" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TTransactionDetail" class="com.mac.transaction.item_transaction_new.object.TTransactionDetail" fetch="select">
+            <column name="transaction_detail" not-null="true" />
+        </many-to-one>
+        <many-to-one name="MStoreByOutStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="out_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MStoreByInStore" class="com.mac.transaction.item_transaction_new.object.MStore" fetch="select">
+            <column name="in_store" length="21" />
+        </many-to-one>
+        <many-to-one name="MItem" class="com.mac.transaction.item_transaction_new.object.MItem" fetch="select">
+            <column name="item" length="21" not-null="true" />
+        </many-to-one>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="serialNumber" type="string">
+            <column name="serial_number" length="25" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" />
+        </property>
+    </class>
+</hibernate-mapping>

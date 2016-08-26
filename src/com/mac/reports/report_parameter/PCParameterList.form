@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="pnlParameter" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblStore" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEmployee" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblClient" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSupplier" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblItem" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBranch" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblRoute" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBrand" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMainCategory" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDepartment" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblJobCategory" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMake" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblModel" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSize" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblUnit" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblGenaric" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTransactorCategory" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFromDate" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblToDate" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblAsAtDate" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTransactionType" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cboDepartment" alignment="0" max="32767" attributes="0"/>
+                          <Component id="cboMainCategory" alignment="0" max="32767" attributes="0"/>
+                          <Component id="cboSubCategory" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboStore" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboEmployee" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboClient" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboSupplier" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboItem" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboBranch" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboRoute" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboBrand" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboMake" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboModel" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboSize" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboUnit" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboGenaric" alignment="0" pref="273" max="32767" attributes="0"/>
+                          <Component id="cboTransactionCategory" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtFromDate" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtToDate" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtAsAtDate" alignment="0" max="32767" attributes="0"/>
+                          <Component id="cboTransactionType" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblDepartment" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboDepartment" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblMainCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboMainCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblJobCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboSubCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblStore" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboStore" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblEmployee" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboEmployee" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblClient" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboClient" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblSupplier" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboSupplier" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblItem" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboItem" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblBranch" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboBranch" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblRoute" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboRoute" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblBrand" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboBrand" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblMake" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboMake" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblModel" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboModel" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblSize" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboSize" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblUnit" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboUnit" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblGenaric" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboGenaric" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblTransactorCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboTransactionCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="lblTransactionType" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboTransactionType" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="txtFromDate" alignment="2" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="lblFromDate" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="txtToDate" alignment="2" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="lblToDate" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="txtAsAtDate" alignment="2" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="lblAsAtDate" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="pnlParameter" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblDepartment">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Department :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboDepartment">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return service.getDepartments();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblMainCategory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Main Category:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboMainCategory">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;       @Override&#xa;        public List getComboData(){&#xa;        return service.getMainCategories();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblJobCategory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sub Category:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSubCategory">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;  @Override&#xa;    public List getComboData(){&#xa;        return service.getSubCategories();&#xa;    }&#xa;&#xa;&#xa;}&#xa;&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblEmployee">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Employee:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboEmployee">
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblStore">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Store:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboStore">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;   @Override&#xa;        public List getComboData(){&#xa;        return service.getStores();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSupplier">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;     @Override&#xa;    public List getComboData(){&#xa;        return service.getSuppliers();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblClient">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Client:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboClient">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return service.getClients();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblSupplier">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Supplier:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblItem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Item:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboItem">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;       @Override&#xa;    public List getComboData(){&#xa;        return service.getItems();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblBranch">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Branch:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboBranch">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;  @Override&#xa;        public List getComboData(){&#xa;        return service.getBranches();&#xa;    }&#xa;}&#xa;&#xa;&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblRoute">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Route:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboRoute">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;       @Override&#xa;        public List getComboData(){&#xa;        return service.getRouts();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblBrand">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Brand:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboBrand">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox()&#xa;{&#xa;     @Override&#xa;        public List getComboData(){&#xa;        return service.getBrands();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblMake">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Make:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboMake">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;     @Override&#xa;        public List getComboData(){&#xa;        return service.getMakes();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboModel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;     @Override&#xa;        public List getComboData(){&#xa;        return service.getModels();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblModel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Model:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblSize">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Size:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSize">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;     @Override&#xa;        public List getComboData(){&#xa;        return service.getSizes();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblUnit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Unit:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboUnit">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;     @Override&#xa;        public List getComboData(){&#xa;        return service.getUnits();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboGenaric">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;     @Override&#xa;        public List getComboData(){&#xa;        return service.getGenarics();&#xa;    }&#xa;}&#xa;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblGenaric">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Genaric:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblTransactorCategory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Transactor Category:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboTransactionCategory">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;       @Override&#xa;        public List getComboData(){&#xa;        return service.getTransactorCategories();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblFromDate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="From Date:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDateField" name="txtFromDate">
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblToDate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="To Date:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDateField" name="txtToDate">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDateField" name="txtAsAtDate">
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblAsAtDate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="As At Date:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="pnlParameter">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+    </Container>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblTransactionType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Transaction Type:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboTransactionType">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return service.getTransactionType();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

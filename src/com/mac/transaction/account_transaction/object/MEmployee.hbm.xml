@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On May 15, 2015 12:58:15 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.account_transaction.object.MEmployee" table="m_employee" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.account_transaction.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="21" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="10" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="nicNo" type="string">
+            <column name="nic_no" length="25" not-null="true" />
+        </property>
+        <property name="salutation" type="string">
+            <column name="salutation" length="25" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="fullName" type="string">
+            <column name="full_name" length="100" not-null="true" />
+        </property>
+        <property name="addressLine1" type="string">
+            <column name="address_line1" length="50" not-null="true" />
+        </property>
+        <property name="addressLine2" type="string">
+            <column name="address_line2" length="50" not-null="true" />
+        </property>
+        <property name="addressLine3" type="string">
+            <column name="address_line3" length="50" not-null="true" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="25" not-null="true" />
+        </property>
+        <property name="telephone1" type="string">
+            <column name="telephone1" length="25" not-null="true" />
+        </property>
+        <property name="telephone2" type="string">
+            <column name="telephone_2" length="25" not-null="true" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="25" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="true" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" not-null="true" />
+        </property>
+        <property name="userName" type="string">
+            <column name="user_name" length="50" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="50" />
+        </property>
+        <property name="photo" type="java.lang.Integer">
+            <column name="photo" />
+        </property>
+        <property name="userRole" type="string">
+            <column name="user_role" length="10" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+        <set name="TTransactionSummaries" inverse="true" cascade="all">
+            <key>
+                <column name="employee" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.account_transaction.object.TTransactionSummary" />
+        </set>
+    </class>
+</hibernate-mapping>

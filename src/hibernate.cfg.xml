@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--DATABASE DRIVERS-->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <!--DATABASE CONNECTION-FOR DEVELOPMENT PURPOSES -->
+    <property name="hibernate.connection.url">jdbc:mysql://localhost/helaroo_sphere_nipun</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">smtk</property>
+    <!--DATABASE CONFIGURATION-->
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.generate_statistics">true</property>
+    <!--CACHE-->
+    <!--cache usage - EHcache-->
+    <property name="hibernate.cache.use_query_cache">true</property>
+    <property name="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</property>
+    <property name="net.sf.ehcache.configurationResourceName">ehcache.xml</property>
+    <!--CONNECTION POOL-->
+    <property name="hibernate.connection.provider_class">com.mac.af.core.database.connection_pool.CConnectionProvider</property>
+    <property name="com.mac.af.core.database.connection_pool.pool_min_size">5</property>
+    <property name="com.mac.af.core.database.connection_pool.allow_logging">false</property>
+    <!--MAPPINGS-->
+    <mapping resource="com/mac/registration/bank/object/MBank.hbm.xml"/>
+    <mapping resource="com/mac/registration/bank_branch/object/MBank.hbm.xml"/>
+    <mapping resource="com/mac/registration/bank_branch/object/MBankBranch.hbm.xml"/>
+    <mapping resource="com/mac/registration/branch/object/MCompany.hbm.xml"/>
+    <mapping resource="com/mac/registration/branch/object/MBranch.hbm.xml"/>
+    <!-- <mapping resource="com/mac/registration/client/object/MRoute.hbm.xml"/>
+        <mapping resource="com/mac/registration/client/object/MClient.hbm.xml"/>-->
+    <mapping resource="com/mac/registration/company/object/MCompany.hbm.xml"/>
+    <mapping resource="com/mac/registration/department/object/MDepartment.hbm.xml"/>
+    <mapping resource="com/mac/registration/employee/object/MEmployee.hbm.xml"/>
+    <!--<mapping resource="com/mac/registration/employee/object/MStore.hbm.xml"/>-->
+    <mapping resource="com/mac/registration/employee/object/MPhoto.hbm.xml"/>
+    <mapping resource="com/mac/registration/item/object/MItem.hbm.xml"/>
+    <mapping resource="com/mac/registration/item/object/MMainCategory.hbm.xml"/>
+    <mapping resource="com/mac/registration/item/object/MSubCategory.hbm.xml"/>
+    <!--<mapping resource="com/mac/registration/item/object/MItemProperty.hbm.xml"/>-->
+    <mapping resource="com/mac/registration/item/object/MDepartment.hbm.xml"/>
+    <mapping resource="com/mac/registration/main_category/object/MDepartment.hbm.xml"/>
+    <mapping resource="com/mac/registration/main_category/object/MMainCategory.hbm.xml"/>
+    <mapping resource="com/mac/registration/route/object/MRoute.hbm.xml"/>
+    <mapping resource="com/mac/registration/store/object/MStore.hbm.xml"/>
+    <!--<mapping resource="com/mac/registration/store/object/MBranch.hbm.xml"/>-->
+    <mapping resource="com/mac/registration/sub_category/object/MMainCategory.hbm.xml"/>
+    <mapping resource="com/mac/registration/sub_category/object/MDepartment.hbm.xml"/>
+    <mapping resource="com/mac/registration/sub_category/object/MSubCategory.hbm.xml"/>
+    <!-- <mapping resource="com/mac/registration/item_property/object/MItemProperty.hbm.xml"/> -->
+    <mapping resource="com/mac/registration/account/object/MAccount.hbm.xml"/>
+    <mapping resource="com/mac/registration/account/object/MAccountCategory.hbm.xml"/>
+    <mapping resource="com/mac/registration/account_category/object/MAccountCategory.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/transaction/account/object/MAccountCategory.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/transaction/account/object/MAccount.hbm.xml"/>
+    <mapping resource="com/mac/registration/item_price_change/object/MItem.hbm.xml"/>
+    <mapping resource="com/mac/registration/item_price_change/object/MItemBatch.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/item_utils/object/MItem.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/item_utils/object/MItemBatch.hbm.xml"/>
+    <!--<mapping resource="com/mac/registration/item/object/MItemBrand.hbm.xml"/>
+        <mapping resource="com/mac/registration/item/object/MItemGeneric.hbm.xml"/>
+        <mapping resource="com/mac/registration/item/object/MItemMake.hbm.xml"/>
+        <mapping resource="com/mac/registration/item/object/MItemModel.hbm.xml"/>
+        <mapping resource="com/mac/registration/item/object/MItemSize.hbm.xml"/>
+        <mapping resource="com/mac/registration/item/object/MItemUnit.hbm.xml"/>-->
+    <mapping resource="com/mac/registration/item/object/MItemSettings.hbm.xml"/>
+    <mapping resource="com/mac/registration/item/object/MItemProperty.hbm.xml"/>
+    <mapping resource="com/mac/registration/transactor_category/object/MTransactorCategory.hbm.xml"/>
+    <mapping resource="com/mac/registration/transactor/object/MRoute.hbm.xml"/>
+    <mapping resource="com/mac/registration/transactor/object/MTransactorCategory.hbm.xml"/>
+    <mapping resource="com/mac/registration/transactor/object/MTransactor.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/settings/system_settings/object/RSystemSetting.hbm.xml"/>
+    <mapping resource="com/mac/registration/item_property/object/MItemProperty.hbm.xml"/>
+    <mapping resource="com/mac/transaction/transaction_registration/object/MBranch.hbm.xml"/>
+    <mapping resource="com/mac/transaction/transaction_registration/object/MStore.hbm.xml"/>
+    <mapping resource="com/mac/transaction/transaction_registration/object/MCompany.hbm.xml"/>
+    <mapping resource="com/mac/transaction/transaction_registration/object/RTransactionType.hbm.xml"/>
+    <mapping resource="com/mac/registration/item/object/MItemBatch.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/util/item/object/MItem.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/util/item/object/MItemBatch.hbm.xml"/>
+    <mapping resource="com/mac/reports/object/MReport.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/permission/object/RUserRole.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/permission/object/RPermission.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/permission/object/MReport.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/settings/branch_settings/object/RBranchSetting.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/settings/branch_settings/object/MBranch.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/permission/object/MEmployee.hbm.xml"/>
+    <mapping resource="com/mac/registration/employee/object/RUserRole.hbm.xml"/>
+    <mapping resource="com/mac/registration/employee/object/RPermission.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MBranch.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MDepartment.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MEmployee.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MItem.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MItemProperty.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MMainCategory.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MRoute.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MStore.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MSubCategory.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MTransactor.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/object/MTransactorCategory.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/MEmployee.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/MItem.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/RTransactionType.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/MStore.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/TTransactionSummary.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/TTransactionDetail.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/TItemMovement.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/MItemBatch.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/MTransactor.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/TSerialMovement.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/TTransactionSettlement.hbm.xml"/>
+    <mapping resource="com/mac/reports/report_parameter/transaction_type_object/RTransactionType.hbm.xml"/>
+    <mapping resource="com/mac/transaction/transaction_registration/object/MReport.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/MReport.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/TTransactionSummary.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/TTransactorTransaction.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/MEmployee.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/TTransactionSettlement.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/RTransactionType.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/MTransactor.hbm.xml"/>
+    <mapping resource="com/mac/transaction/item_transaction_new/object/TTransactorTransaction.hbm.xml"/>
+    <mapping resource="com/mac/transaction/account_transaction/object/MReport.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/payment/hibernate/TCheque.hbm.xml"/>
+    <mapping resource="com/mac/zsystem/payment/hibernate/MBankBranch.hbm.xml"/>
+    
+  </session-factory>
+</hibernate-configuration>

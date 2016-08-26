@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 27, 2015 12:48:51 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.item.object.MSubCategory" table="m_sub_category" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.item.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="21" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="MMainCategory" class="com.mac.registration.item.object.MMainCategory" fetch="select">
+            <column name="main_category" length="21" not-null="true" />
+        </many-to-one>
+        <property name="code" type="string">
+            <column name="code" length="10" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+        <set name="MItems" inverse="true" cascade="all">
+            <key>
+                <column name="sub_category" length="21" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+    </class>
+</hibernate-mapping>

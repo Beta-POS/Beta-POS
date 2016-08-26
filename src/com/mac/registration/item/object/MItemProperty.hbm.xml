@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 27, 2015 12:48:51 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.item.object.MItemProperty" table="m_item_property" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.item.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="25" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <set name="MItemsForMake" inverse="true" cascade="all">
+            <key>
+                <column name="make" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+        <set name="MItemsForBrand" inverse="true" cascade="all">
+            <key>
+                <column name="brand" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+        <set name="MItemsForSize" inverse="true" cascade="all">
+            <key>
+                <column name="size" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+        <set name="MItemsForModel" inverse="true" cascade="all">
+            <key>
+                <column name="model" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+        <set name="MItemsForGeneric" inverse="true" cascade="all">
+            <key>
+                <column name="generic" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+        <set name="MItemsForUnit" inverse="true" cascade="all">
+            <key>
+                <column name="unit" />
+            </key>
+            <one-to-many class="com.mac.registration.item.object.MItem" />
+        </set>
+    </class>
+</hibernate-mapping>

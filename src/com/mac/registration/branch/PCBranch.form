@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="cDLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel3" alignment="0" min="-2" pref="77" max="-2" attributes="0"/>
+                  <Component id="cDLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel7" alignment="0" min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="cDLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="cDLabel11" alignment="0" max="32767" attributes="0"/>
+                      <Component id="cDLabel10" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="cDLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtAddress1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtAddress2" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtAddress3" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtEmail" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtNote" max="32767" attributes="0"/>
+                  <Component id="cboName" pref="299" max="32767" attributes="0"/>
+                  <Component id="txtName" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="txtCode" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="txtFax" alignment="0" pref="125" max="32767" attributes="0"/>
+                                  <Component id="txtHotLine" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="chkActive" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtTelephone1" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="txtTelephone2" min="-2" pref="125" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCode" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="cDLabel2" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboName" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtName" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="11" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAddress1" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtAddress2" min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="txtAddress3" min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHotLine" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTelephone1" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="txtTelephone2" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtFax" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEmail" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtNote" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="chkActive" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Company :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Address :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Hot Line :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Telephone :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fax :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Note :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtCode">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtAddress1">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtAddress2">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtAddress3">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtHotLine">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtTelephone1">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtTelephone2">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtFax">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtEmail">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtNote">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkActive">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Active"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboName">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;   &#xa;   @Override&#xa;    public List getComboData(){&#xa;        return getCompany();&#xa;    }&#xa;}"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Name:"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtName">
+    </Component>
+  </SubComponents>
+</Form>

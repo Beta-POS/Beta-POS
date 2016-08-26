@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.TTransactorTransaction" table="t_transactor_transaction" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="MTransactor" class="com.mac.transaction.item_transaction_new.object.MTransactor" fetch="select">
+            <column name="transactor" length="21" />
+        </many-to-one>
+        <many-to-one name="TTransactionSummary" class="com.mac.transaction.item_transaction_new.object.TTransactionSummary" fetch="select">
+            <column name="transaction_summary" />
+        </many-to-one>
+        <property name="transactionType" type="string">
+            <column name="transaction_type" length="25" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="100" />
+        </property>
+        <property name="debitAmount" type="java.lang.Double">
+            <column name="debit_amount" precision="22" scale="0" />
+        </property>
+        <property name="creditAmount" type="java.lang.Double">
+            <column name="credit_amount" precision="22" scale="0" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="25" />
+        </property>
+    </class>
+</hibernate-mapping>

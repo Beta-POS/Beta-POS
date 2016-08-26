@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Mar 20, 2015 9:41:47 AM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.transaction.item_transaction_new.object.MStore" table="m_store" lazy="false">
+        <cache usage="read-write" region="com.mac.transaction.item_transaction_new.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="21" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="10" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+        <set name="TSerialMovementsForOutStore" inverse="true" cascade="all">
+            <key>
+                <column name="out_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TSerialMovement" />
+        </set>
+        <set name="TItemMovements" inverse="true" cascade="all">
+            <key>
+                <column name="store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TItemMovement" />
+        </set>
+        <set name="TTransactionSummariesForInStore" inverse="true" cascade="all">
+            <key>
+                <column name="in_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactionSummary" />
+        </set>
+        <set name="TSerialMovementsForInStore" inverse="true" cascade="all">
+            <key>
+                <column name="in_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TSerialMovement" />
+        </set>
+        <set name="TTransactionSummariesForOutStore" inverse="true" cascade="all">
+            <key>
+                <column name="out_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactionSummary" />
+        </set>
+        <set name="TTransactionDetailsForInStore" inverse="true" cascade="all">
+            <key>
+                <column name="in_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactionDetail" />
+        </set>
+        <set name="TTransactionDetailsForOutStore" inverse="true" cascade="all">
+            <key>
+                <column name="out_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.TTransactionDetail" />
+        </set>
+        <set name="RTransactionTypesForInStore" inverse="true" cascade="all">
+            <key>
+                <column name="in_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.RTransactionType" />
+        </set>
+        <set name="RTransactionTypesForOutStore" inverse="true" cascade="all">
+            <key>
+                <column name="out_store" length="21" />
+            </key>
+            <one-to-many class="com.mac.transaction.item_transaction_new.object.RTransactionType" />
+        </set>
+    </class>
+</hibernate-mapping>

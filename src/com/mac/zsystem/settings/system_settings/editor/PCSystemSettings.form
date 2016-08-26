@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblDefaultValueString" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblValueString" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cDLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDefaultValueDouble" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblValueDouble" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDefaultValueInteger" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblValueInteger" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtSetting" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="305" max="32767" attributes="0"/>
+                  <Component id="txtDefaultValueString" max="32767" attributes="0"/>
+                  <Component id="txtValueString" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtDefaultValueDouble" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtValueDouble" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtDefaultValueInteger" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtValueInteger" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="chkDefaultValue" min="-2" max="-2" attributes="0"/>
+                          <Component id="chkValue" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="btnEdit" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnClose" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cDLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtSetting" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="cDLabel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="96" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtDefaultValueString" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="lblDefaultValueString" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblValueString" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtValueString" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDefaultValueDouble" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDefaultValueDouble" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblValueDouble" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtValueDouble" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDefaultValueInteger" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDefaultValueInteger" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblValueInteger" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtValueInteger" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="chkDefaultValue" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="chkValue" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSave" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnClose" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEdit" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Setting :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Description :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblDefaultValueString">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Default Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblValueString">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtSetting">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtDefaultValueString">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtValueString">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="com.mac.af.component.derived.input.textarea.CITextArea" name="txtDescription">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="com.mac.af.component.derived.command.button.CCButton" name="btnSave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.command.button.CCButton" name="btnClose">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Close"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblDefaultValueDouble">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Default Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblValueDouble">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtDefaultValueDouble">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtValueDouble">
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblDefaultValueInteger">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Default Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="lblValueInteger">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Value :"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIIntegerField" name="txtDefaultValueInteger">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.textfield.CIIntegerField" name="txtValueInteger">
+    </Component>
+    <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkDefaultValue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Default Value"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkValue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Value"/>
+      </Properties>
+    </Component>
+    <Component class="com.mac.af.component.derived.command.button.CCButton" name="btnEdit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Edit"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

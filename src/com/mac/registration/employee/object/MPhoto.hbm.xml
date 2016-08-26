@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 18, 2015 12:54:16 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.employee.object.MPhoto" table="m_photo" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.employee.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <property name="photo" type="binary">
+            <column name="photo" not-null="true" />
+        </property>
+        <set name="MEmployees" inverse="true" cascade="all">
+            <key>
+                <column name="photo" />
+            </key>
+            <one-to-many class="com.mac.registration.employee.object.MEmployee" />
+        </set>
+    </class>
+</hibernate-mapping>

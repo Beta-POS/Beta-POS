@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Jan 13, 2015 3:25:14 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.zsystem.item_utils.object.MItemBatch" table="m_item_batch" lazy="false">
+        <cache usage="read-write" region="com.mac.zsystem.item_utils.object" />
+        <id name="indexNo" type="java.lang.Integer">
+            <column name="index_no" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="MItem" class="com.mac.zsystem.item_utils.object.MItem" fetch="select">
+            <column name="item" length="10" not-null="true" />
+        </many-to-one>
+        <property name="batchCode" type="string">
+            <column name="batch_code" length="10" not-null="true" />
+        </property>
+        <property name="salePrice" type="double">
+            <column name="sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="lastSalesPrice" type="double">
+            <column name="last_sales_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wholeSalePrice" type="double">
+            <column name="whole_sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="costPrice" type="double">
+            <column name="cost_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="averagePrice" type="double">
+            <column name="average_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="dateTime" type="timestamp">
+            <column name="date_time" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

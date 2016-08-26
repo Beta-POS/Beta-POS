@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Feb 18, 2015 4:27:47 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.registration.item_price_change.object.MItem" table="m_item" lazy="false">
+        <cache usage="read-write" region="com.mac.registration.item_price_change.object" />
+        <id name="hash" type="string">
+            <column name="hash" length="21" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="10" not-null="true" />
+        </property>
+        <property name="branch" type="string">
+            <column name="branch" length="10" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="barcode" type="string">
+            <column name="barcode" length="25" />
+        </property>
+        <property name="sinhalaName" type="string">
+            <column name="sinhala_name" length="65535" />
+        </property>
+        <property name="tamilName" type="string">
+            <column name="tamil_name" length="65535" />
+        </property>
+        <property name="brand" type="java.lang.Integer">
+            <column name="brand" />
+        </property>
+        <property name="make" type="java.lang.Integer">
+            <column name="make" />
+        </property>
+        <property name="model" type="java.lang.Integer">
+            <column name="model" />
+        </property>
+        <property name="size" type="java.lang.Integer">
+            <column name="size" />
+        </property>
+        <property name="unit" type="java.lang.Integer">
+            <column name="unit" />
+        </property>
+        <property name="generic" type="java.lang.Integer">
+            <column name="generic" />
+        </property>
+        <property name="department" type="string">
+            <column name="department" length="21" />
+        </property>
+        <property name="mainCategory" type="string">
+            <column name="main_category" length="21" />
+        </property>
+        <property name="subCategory" type="string">
+            <column name="sub_category" length="21" />
+        </property>
+        <property name="quantityInPack" type="int">
+            <column name="quantity_in_pack" not-null="true" />
+        </property>
+        <property name="costPrice" type="double">
+            <column name="cost_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wholeSaleMargin" type="double">
+            <column name="whole_sale_margin" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="wholeSalePrice" type="double">
+            <column name="whole_sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="maxDiscountPercent" type="double">
+            <column name="max_discount_percent" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="lastSalePrice" type="double">
+            <column name="last_sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="saleMargin" type="double">
+            <column name="sale_margin" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="salePrice" type="double">
+            <column name="sale_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="averagePrice" type="double">
+            <column name="average_price" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="batch" type="boolean">
+            <column name="batch" not-null="true" />
+        </property>
+        <property name="serial" type="boolean">
+            <column name="serial" not-null="true" />
+        </property>
+        <property name="service" type="boolean">
+            <column name="service" not-null="true" />
+        </property>
+        <property name="active" type="boolean">
+            <column name="active" not-null="true" />
+        </property>
+        <set name="MItemBatchs" inverse="true" cascade="all">
+            <key>
+                <column name="item" length="21" not-null="true" />
+            </key>
+            <one-to-many class="com.mac.registration.item_price_change.object.MItemBatch" />
+        </set>
+    </class>
+</hibernate-mapping>

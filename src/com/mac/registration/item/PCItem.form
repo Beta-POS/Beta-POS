@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code:"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Properties>
+        <Property name="tabPlacement" type="int" value="2"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Basic">
+                <Property name="tabTitle" type="java.lang.String" value="Basic"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="cDLabel6" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="cDLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cDLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cDLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cDLabel15" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="cDLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cDLabel8" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Component id="cDLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cboDepartment" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboMainCategory" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboSubCategory" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtShinhalaName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtTamilName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboBrand" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboMake" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboModel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboSize" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboUnit" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboGenaric" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtCode" max="32767" attributes="0"/>
+                                          <Component id="txtBarCode" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="chkActive" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="chkBatchPrice" min="-2" pref="93" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Component id="chkSerialNumber" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="chkServiceItem" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel14" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboDepartment" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel2" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboMainCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel3" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboSubCategory" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cDLabel15" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCode" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtBarCode" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="cDLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtName" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="cDLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtShinhalaName" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cDLabel7" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTamilName" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel8" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboBrand" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel9" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboMake" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel10" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboModel" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel11" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboSize" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel12" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboUnit" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="cDLabel13" alignment="2" min="-2" max="-2" attributes="0"/>
+                          <Component id="cboGenaric" alignment="2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chkServiceItem" alignment="3" max="32767" attributes="0"/>
+                          <Component id="chkSerialNumber" alignment="3" max="32767" attributes="0"/>
+                          <Component id="chkBatchPrice" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="chkActive" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkSerialNumber">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Serial Numbers"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkSerialNumberActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboGenaric">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getItemProperties(ItemPropertyTypes.GENERIC);&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboMainCategory">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getMainCategory(department);&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void afterRefresh(){&#xa;        try {&#xa;            MItem item;&#xa;            if ((item = getValueAbstract()) != null) {&#xa;                setCValue(item.getMMainCategory());&#xa;            }&#xa;        } catch (ObjectCreatorException ex) {&#xa;            Logger.getLogger(PCItem.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkServiceItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Service Item"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSize">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getItemProperties(ItemPropertyTypes.SIZE);&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtName">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNameActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel13">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Genaric:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tamil Name:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Brand:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel11">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Size:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sub Category:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Main Category:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboDepartment">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getDepartments();&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void afterRefresh(){&#xa;        try {&#xa;            MItem item;&#xa;            if ((item = getValueAbstract()) != null) {&#xa;                setCValue(item.getMDepartment());&#xa;            }&#xa;        } catch (ObjectCreatorException ex) {&#xa;            Logger.getLogger(PCItem.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtShinhalaName">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="FMBindumathi" size="14" style="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtShinhalaNameActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Barcode:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel12">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Unit:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboMake">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getItemProperties(ItemPropertyTypes.MAKE);&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtTamilName">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Kalaham" size="11" style="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTamilNameActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel10">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Model:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Make:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtCode">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCodeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtBarCode">
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboUnit">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getItemProperties(ItemPropertyTypes.UNIT);&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel14">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Department:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboSubCategory">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getSubCategory(mainCategory);&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void afterRefresh(){&#xa;        try {&#xa;            MItem item;&#xa;            if ((item = getValueAbstract()) != null) {&#xa;                setCValue(item.getMSubCategory());&#xa;            }&#xa;        } catch (ObjectCreatorException ex) {&#xa;            Logger.getLogger(PCItem.class.getName()).log(Level.SEVERE, null, ex);&#xa;        }&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboBrand">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getItemProperties(ItemPropertyTypes.BRAND);&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Shinhala Name:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkBatchPrice">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Batch Prices"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chkBatchPriceActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.combobox.CIComboBox" name="cboModel">
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.mac.af.component.derived.input.combobox.CIComboBox(){&#xa;    @Override&#xa;    public List getComboData(){&#xa;        return serItem.getItemProperties(ItemPropertyTypes.MODEL);&#xa;    }&#xa;}"/>
+              </AuxValues>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Name:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel15">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Item Code:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.checkbox.CICheckBox" name="chkActive">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Active"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Item Price">
+                <Property name="tabTitle" type="java.lang.String" value="Item Price"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cDLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="txtWholeSalePriceMargin" pref="140" max="32767" attributes="0"/>
+                          <Component id="txtLastSalePrice" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMaxDiscountPrecent" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtSalesPrice" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtSaleMargin" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtCostPrice" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtWholeSalePrice" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtCostPrice" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="cDLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSaleMargin" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtSalesPrice" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="cDLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMaxDiscountPrecent" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtLastSalePrice" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="cDLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtWholeSalePriceMargin" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="cDLabel25" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtWholeSalePrice" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel16">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sale Price:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtSalesPrice">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+                <Property name="text" type="java.lang.String" value=""/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSalesPriceActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtLastSalePrice">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLastSalePriceActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel17">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Last Sale Price:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel18">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Whole Sale Price:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtWholeSalePrice">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtCostPrice">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCostPriceActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel19">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cost Price:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel20">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Max Discount (%):"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtMaxDiscountPrecent">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel24">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sale Margin(%):"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtSaleMargin">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel25">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Whole Sale Price Margin(%):"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIDoubleField" name="txtWholeSalePriceMargin">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="4"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Item Settings">
+                <Property name="tabTitle" type="java.lang.String" value="Item Settings"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cDLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtReordrLevel" max="32767" attributes="0"/>
+                          <Component id="txtReorderQuantity" pref="211" max="32767" attributes="0"/>
+                          <Component id="txtShelf" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtReordrLevel" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtReorderQuantity" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cDLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtShelf" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="337" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel21">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reorder Level:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel22">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reorder Quantity:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.display.label.CDLabel" name="cDLabel23">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Shelf:"/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIIntegerField" name="txtReordrLevel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=""/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIIntegerField" name="txtReorderQuantity">
+              <Properties>
+                <Property name="text" type="java.lang.String" value=""/>
+              </Properties>
+            </Component>
+            <Component class="com.mac.af.component.derived.input.textfield.CIStringField" name="txtShelf">
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

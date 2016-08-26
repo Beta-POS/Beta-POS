@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+        @author Channa Mohan
+        
+        Created On Jul 2, 2015 3:38:31 PM 
+        Mohan Hibernate Mapping Generator
+-->
+<hibernate-mapping auto-import="false">
+    <class name="com.mac.reports.object.MReport" table="m_report" lazy="false">
+        <cache usage="read-write" />
+        <id name="code" type="string">
+            <column name="code" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="category" type="string">
+            <column name="category" length="50" not-null="true" />
+        </property>
+        <property name="report" type="binary">
+            <column name="report" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
