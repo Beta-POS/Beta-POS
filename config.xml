@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><config>
+    <root>
+        <framework>
+            <database>
+                <driver>com.mysql.jdbc.Driver</driver>
+                <url>jdbc:mysql://localhost/beta_pos_x</url>
+                <user-name>root</user-name>
+                <password>mysql</password>
+            </database>
+            <skin>
+                <skin/>
+            </skin>
+            <store>
+                <store>DEF</store>
+            </store>
+        </framework>
+    </root>
+</config>
