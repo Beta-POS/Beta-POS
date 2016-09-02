@@ -81,7 +81,7 @@ public class Sphere extends CApplication {
 
     @Override
     public String getApplicationName() {
-        return "Sphere";
+        return "Beta Pos";
     }
 
     @Override
@@ -117,11 +117,11 @@ public class Sphere extends CApplication {
         Store store1 = ((Framework) CApplication.getInstance().getSettingRoot().getSetting(Framework.class)).getStore();
 
         HashMap<String, Object> params = new HashMap<>();
-        params.put("USER_NAME", user);
+//        params.put("USER_NAME", user);
         params.put("PASSWORD", password);
         params.put("STORE", ((Store) store1).getStore().getValue());
 
-        List<MEmployee> listData = databaseService.getCollection("from com.mac.registration.employee.object.MEmployee where active=true and user_name=:USER_NAME and password=:PASSWORD and branch = :STORE", params);
+        List<MEmployee> listData = databaseService.getCollection("from com.mac.registration.employee.object.MEmployee where active=true and password=:PASSWORD and branch = :STORE", params);
 
         if (listData.size() > 0) {
             MEmployee mEmployee = listData.get(0);
